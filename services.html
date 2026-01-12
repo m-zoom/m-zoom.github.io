@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Apex Sanctuary</title>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <img src="img/logo.jpeg" alt="Apex Sanctuary Logo" class="logo-img">
+                </div>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <div class="phone-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="phone-text">
+                    <small>Call us for any question</small>
+                    <strong>Contact Us</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Our Services</h1>
+            <p>Comprehensive care solutions tailored to your needs</p>
+        </div>
+    </section>
+
+    <section class="services-tabs scroll-reveal">
+        <div class="tabs-header-bg">
+            <div class="container">
+                <h2>Know more about Apex Sanctuary Services</h2>
+                <div class="tabs-nav">
+                    <button class="tab-btn active" onclick="openTab(event, 'what-we-do')">What we Do</button>
+                    <button class="tab-btn" onclick="openTab(event, 'mission')">Our Mission</button>
+                    <button class="tab-btn" onclick="openTab(event, 'why-choose')">Why Choose Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container tab-content-wrapper">
+            <div id="what-we-do" class="tab-content active">
+                <div class="tab-flex">
+                    <div class="tab-text">
+                        <h2>What we <span class="orange-text">Do</span></h2>
+                        <p>Apex Sanctuary provides professional support and care services to individuals in their own homes across PE7, Peterborough, Cambridgeshire and surrounding areas. Our aim is to ensure the well-being of the individuals we care for and that they lead a healthier and happier lifestyle.</p>
+                        <p>We offer person-centred help and support to our service users 24/7, ranging from short-term to long-term care depending on each person's individual needs. Our expert team includes doctors, nurses, social workers, and experienced carers, all dedicated to providing exceptional and safe care.</p>
+                        <p>Our comprehensive range of services includes Supported Living, End of Life Care, Home Care, Dementia/Alzheimer's Care, High Dependency Care, and many more specialist services. We work closely with families, healthcare professionals, and local authorities to ensure seamless, coordinated care.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="img/e.png" alt="Caregiver with elderly person in wheelchair">
+                    </div>
+                </div>
+            </div>
+
+            <div id="mission" class="tab-content">
+                <div class="tab-flex">
+                    <div class="tab-text">
+                        <h2>Our <span class="orange-text">Mission</span></h2>
+                        <p>Our mission is to deliver exceptional, person-centred care that empowers individuals to live independently and with dignity in their own homes. We are committed to providing high-quality support services that enhance quality of life and promote well-being.</p>
+                        <p>With our diverse team of qualified professionals including doctors, nurses, social workers, and experienced carers, we ensure good quality services that prioritise your loved ones' needs. Our approach is holistic, considering not just physical needs but also emotional, social, and psychological well-being.</p>
+                        <p>Through continuous improvement, staff development, and adherence to best practices, we strive to set the standard for excellence in home care services across PE7, Peterborough, Cambridgeshire and surrounding areas.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="img/f.png" alt="Mission and values">
+                    </div>
+                </div>
+            </div>
+
+            <div id="why-choose" class="tab-content">
+                <div class="tab-flex">
+                    <div class="tab-text">
+                        <h2>Why <span class="orange-text">Choose Us</span></h2>
+                        <p>Choosing Apex Sanctuary means choosing a partner dedicated to your well-being. We stand out through our commitment to excellence, professional expertise, and unwavering dedication to our service users.</p>
+                        <p><strong>Expert Diversity:</strong> Our team consists of doctors, nurses, social workers, and experienced carers, providing comprehensive professional care.</p>
+                        <p><strong>Professional Excellence:</strong> Qualified professionals with vast experience and a dedication to providing exceptional and safe care that prioritises your loved ones' needs.</p>
+                        <p><strong>Compassionate Companions:</strong> We provide warm, empathetic support that goes beyond physical care, offering genuine companionship and emotional support.</p>
+                        <p><strong>Local Expertise:</strong> Serving PE7, Peterborough, Cambridgeshire and surrounding areas with deep understanding of local resources and community needs.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="img/g.png" alt="Why choose us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-cards scroll-reveal">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Service Categories</h2>
+                <p>Comprehensive care solutions designed to support independence and enhance quality of life</p>
+            </div>
+            <div class="service-card-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="img/i.png" alt="Supported Living">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Supported Living</h3>
+                        <p>Comprehensive support for individuals living independently in their own homes, promoting autonomy while ensuring safety and well-being. Our team helps maintain independence with professional support tailored to individual needs.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="img/j.png" alt="End of Life Care">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>End of Life Care</h3>
+                        <p>Compassionate, dignified support for individuals and families during life's final journey. Our experienced team provides physical, emotional, and spiritual care, ensuring comfort and peace during this sensitive time.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="img/k.png" alt="Home Care">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Home Care</h3>
+                        <p>Professional assistance with daily living activities, personal care, medication administration, and meal preparation in the comfort of your own home. We help maintain independence while ensuring safety and well-being.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="img/l.png" alt="Light Cleaning Service">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Light Cleaning Service</h3>
+                        <p>Professional light cleaning services in your own home to help maintain a clean, safe, and comfortable living environment. Our team assists with household tasks to support your independence.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=600" alt="Companionship">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Companionship</h3>
+                        <p>Warm, empathetic support that goes beyond physical care. Our companionship services include conversation, activities, outings, and assistance with hobbies, promoting mental well-being and social engagement.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80&w=600" alt="Dementia/Alzheimer's">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Dementia/Alzheimer's Care</h3>
+                        <p>Specialist support for individuals living with dementia and Alzheimer's. Our trained team provides compassionate, person-centred care that respects dignity, promotes engagement, and creates a safe, familiar environment.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=600" alt="Meal Preparation">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Meal Preparation & Serving</h3>
+                        <p>Professional meal preparation and serving services to ensure nutritious, well-balanced meals. Our team helps with planning, cooking, and serving meals tailored to dietary requirements and preferences.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600" alt="High Dependency Care">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>High Dependency Care</h3>
+                        <p>Specialist high dependency care with two carers attending when needed. Our team provides intensive support for individuals with complex care needs, ensuring safety, comfort, and dignity at all times.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="img/m.png" alt="Hospital Discharge">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Hospital Discharge</h3>
+                        <p>Seamless transition from hospital to home with professional support. Our team coordinates with healthcare providers to ensure continuity of care and a smooth recovery process in familiar surroundings.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=600" alt="Learning Disability">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Learning Disability Support</h3>
+                        <p>Specialist support for individuals with learning disabilities, promoting independence, choice, and inclusion. Our team works to develop skills, build confidence, and support participation in community life.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=600" alt="Medication Administration">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Medication Administration</h3>
+                        <p>Professional medication administration and management services. Our qualified team ensures medications are taken correctly, on time, and safely, with careful monitoring and documentation.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="img/n.png" alt="Elderly Care">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Old Age/Elderly Care</h3>
+                        <p>Comprehensive care services for older adults, supporting independence and quality of life. Our team provides assistance with daily activities, personal care, and companionship tailored to individual needs.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&q=80&w=600" alt="Palliative Care">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Palliative Care</h3>
+                        <p>Specialist palliative care focusing on comfort, dignity, and quality of life. Our compassionate team provides physical, emotional, and spiritual support for individuals with life-limiting conditions.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1576765909185-3c6c02186966?auto=format&fit=crop&q=80&w=600" alt="Personal Hygiene">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Personal Hygiene Care</h3>
+                        <p>Respectful, dignified assistance with personal hygiene tasks including bathing, grooming, and dressing. Our team ensures comfort, safety, and dignity while maintaining personal care routines.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600" alt="Physical Disability">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Physical Disability Support</h3>
+                        <p>Specialist support for individuals with physical disabilities, promoting independence and participation. Our team assists with mobility, daily activities, and access to community resources.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600" alt="Respite Care">
+                    </div>
+                    <div class="s-card-body">
+                        <h3>Respite Care</h3>
+                        <p>Short-term care support to give family carers a well-deserved break. Whether for a few hours, days, or weeks, our respite care services ensure continuity of care while providing peace of mind to families.</p>
+                        <a href="contact.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="img/logo.jpeg" alt="Apex Sanctuary Logo" class="logo-img">
+                </div>
+                <p>Providing exceptional care services in PE7, Peterborough, Cambridgeshire and surrounding areas to ensure the well-being and happiness of our clients.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: info@apexsanctuary.com</p>
+                <p>Location: PE7, Peterborough, Cambridgeshire</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Apex Sanctuary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

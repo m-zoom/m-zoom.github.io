@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Sanctuary - Professional Care Services</title>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <img src="img/logo.jpeg" alt="Apex Sanctuary Logo" class="logo-img">
+                </div>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <div class="phone-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="phone-text">
+                    <small>Call us for any question</small>
+                    <strong>Contact Us</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('img/a.png');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Care You Can Trust</h1>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/b.png');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Compassionate Companions</h1>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/c.png');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Professional Excellence</h1>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/d.png');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Supporting Your Independence</h1>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots"></div>
+    </section>
+
+    <section class="features scroll-reveal">
+        <div class="container feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Expert Diversity</h3>
+                <p>Our team consists of doctors, nurses, social workers, and experienced carers working together to provide comprehensive, professional care.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heart"></i>
+                <h3>Compassionate Companions</h3>
+                <p>We provide warm, empathetic support that goes beyond physical care, offering genuine companionship and emotional support.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-award"></i>
+                <h3>Professional Excellence</h3>
+                <p>Qualified professionals with vast experience and a dedication to providing exceptional and safe care that prioritises your loved ones' needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="discover scroll-reveal">
+        <div class="container discover-flex">
+            <div class="discover-image">
+                <div class="dot-pattern"></div>
+                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800" alt="Caregiver with senior">
+            </div>
+            <div class="discover-text">
+                <h2>Welcome to Apex Sanctuary</h2>
+                <p>At Apex Sanctuary, we provide exceptional care services in PE7, Peterborough, Cambridgeshire and surrounding areas. Our carefully designed approach offers a warm and welcoming environment, ensuring you or your loved one are supported to be as independent and comfortable as possible at home.</p>
+                <p>With personalised care plans, professional expertise, and a dedicated team of doctors, nurses, social workers, and experienced carers, we prioritise your well-being every step of the way.</p>
+            </div>
+        </div>
+    </section>
+
+
+<section class="services-tabs scroll-reveal">
+        <div class="tabs-header-bg">
+            <div class="container">
+                <h2>Know more about Apex Sanctuary Services</h2>
+                <div class="tabs-nav">
+                    <button class="tab-btn active" onclick="openTab(event, 'what-we-do')">What we Do</button>
+                    <button class="tab-btn" onclick="openTab(event, 'mission')">Our Mission</button>
+                    <button class="tab-btn" onclick="openTab(event, 'why-choose')">Why Choose Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container tab-content-wrapper">
+            <div id="what-we-do" class="tab-content active">
+                <div class="tab-flex">
+                    <div class="tab-text">
+                        <h2>What we <span class="orange-text">Do</span></h2>
+                        <p>Apex Sanctuary provides professional support and care services to individuals in their own homes across PE7, Peterborough, Cambridgeshire and surrounding areas. Our aim is to ensure the well-being of the individuals we care for and that they lead a healthier and happier lifestyle.</p>
+                        <p>We offer person-centred help and support to our service users 24/7, ranging from short-term to long-term care depending on each person's individual needs. Our expert team includes doctors, nurses, social workers, and experienced carers, all dedicated to providing exceptional and safe care.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="img/e.png" alt="Caregiver with elderly person in wheelchair">
+                    </div>
+                </div>
+            </div>
+
+            <div id="mission" class="tab-content">
+                <div class="tab-flex">
+                    <div class="tab-text">
+                        <h2>Our <span class="orange-text">Mission</span></h2>
+                        <p>Our mission is to deliver exceptional, person-centred care that empowers individuals to live independently and with dignity in their own homes. We are committed to providing high-quality support services that enhance quality of life and promote well-being.</p>
+                        <p>With our diverse team of qualified professionals including doctors, nurses, social workers, and experienced carers, we ensure good quality services that prioritise your loved ones' needs. Our approach is holistic, considering not just physical needs but also emotional, social, and psychological well-being.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="img/h.png" alt="Mission and values">
+                    </div>
+                </div>
+            </div>
+
+            <div id="why-choose" class="tab-content">
+                <div class="tab-flex">
+                    <div class="tab-text">
+                        <h2>Why <span class="orange-text">Choose Us</span></h2>
+                        <p>Choosing Apex Sanctuary means choosing a partner dedicated to your well-being. We stand out through our commitment to excellence, professional expertise, and unwavering dedication to our service users.</p>
+                        <p><strong>Expert Diversity:</strong> Our team consists of doctors, nurses, social workers, and experienced carers, all working together to provide comprehensive care.</p>
+                        <p><strong>Professional Excellence:</strong> Qualified professionals with vast experience and a dedication to providing exceptional and safe care that prioritises your loved ones' needs.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="img/g.png" alt="Why choose us">
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="service-cards scroll-reveal">
+        <div class="container service-card-grid">
+            <div class="s-card">
+                <div class="s-card-img">
+                    <img src="img/f.png" alt="Live-in care">
+                </div>
+                <div class="s-card-body">
+                    <h3>Supported Living</h3>
+                    <p>Comprehensive support for individuals living independently in their own homes, promoting autonomy while ensuring safety and well-being.</p>
+                    <a href="services.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+
+            <div class="s-card">
+                <div class="s-card-img">
+                    <img src="img/g.jpg" alt="Home care">
+                </div>
+                <div class="s-card-body">
+                    <h3>Home Care</h3>
+                    <p>Professional assistance with daily living activities, personal care, and medication administration in the comfort of your own home.</p>
+                    <a href="services.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+
+            <div class="s-card">
+                <div class="s-card-img">
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=600" alt="Staffing solutions">
+                </div>
+                <div class="s-card-body">
+                    <h3>Dementia & Alzheimer's Care</h3>
+                    <p>Specialist support for individuals living with dementia and Alzheimer's, providing compassionate care tailored to their unique needs.</p>
+                    <a href="services.html" class="learn-more">LEARN MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="img/logo.jpeg" alt="Apex Sanctuary Logo" class="logo-img">
+                </div>
+                <p>Providing exceptional care services in PE7, Peterborough, Cambridgeshire and surrounding areas to ensure the well-being and happiness of our clients.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: info@apexsanctuary.com</p>
+                <p>Location: PE7, Peterborough, Cambridgeshire</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Apex Sanctuary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
