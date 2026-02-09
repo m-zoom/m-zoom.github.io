@@ -494,6 +494,44 @@ footer {
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a { color: #bdc3c7; text-decoration: none; font-size: 14px; }
 
+/* CQC badge - official-looking badge at bottom of footer */
+.cqc-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+.cqc-badge:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #fff;
+}
+.cqc-badge-icon {
+    font-size: 20px;
+    opacity: 0.95;
+}
+.cqc-badge-img {
+    display: block;
+    height: 50px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
+.cqc-badge-fallback {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 20px;
@@ -690,6 +728,62 @@ footer {
 .team-social a:hover {
     color: var(--accent-orange);
     transform: translateY(-3px);
+}
+
+/* Team role cards (no photos/names) */
+.team-roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    padding: 80px 0;
+}
+
+.team-role-card {
+    background: white;
+    border-radius: 12px;
+    padding: 36px 28px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.team-role-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(94, 58, 149, 0.12);
+}
+
+.team-role-icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--navy) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    transition: transform 0.3s ease;
+}
+
+.team-role-card:hover .team-role-icon {
+    transform: scale(1.08);
+}
+
+.team-role-body h3 {
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.team-role-body p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 0;
 }
 
 /* Blog Cards */
@@ -1175,6 +1269,7 @@ footer {
     
     .service-card-grid,
     .team-grid,
+    .team-roles-grid,
     .blog-grid {
         grid-template-columns: 1fr;
     }
